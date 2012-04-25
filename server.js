@@ -5,7 +5,8 @@ var app = require('http').createServer(handler)
   , fs = require('fs');
 
 function handler(req, res) {
-    fs.readFile(__dirname + '/client.html', function(err, data) {
+    var url = req.url === "/" ? "/client.html": req.url
+    fs.readFile(__dirname + url, function(err, data) {
         res.writeHead(200);
         res.end(data);
     });
