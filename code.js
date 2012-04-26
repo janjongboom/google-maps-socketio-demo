@@ -12,6 +12,20 @@ function initialize(callback) {
 };
 
 initialize(function (map) {
+    
+});
+
+});
+
+
+
+
+
+
+
+
+
+/*
     var ele = {
         form: document.getElementById("frmSearch"),
         search: document.getElementById("inpAddress")
@@ -24,9 +38,7 @@ initialize(function (map) {
 
         ev.preventDefault();
     });
-});
-
-});
+*/
 
 //            /**
 //             * Do a geocode search
